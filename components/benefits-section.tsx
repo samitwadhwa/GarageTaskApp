@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Gift, Percent, Ticket } from "lucide-react";
 import { Skeleton } from "./skeleton";
 import { useDashboardStore, Benefit } from "../lib/store";
+import { toast } from "sonner";
 
 const iconMap = {
   gift: <Gift className="w-7 h-7 text-indigo-500" />,
@@ -45,7 +46,20 @@ export function BenefitsSection() {
                 <div>{iconMap[benefit.icon as keyof typeof iconMap]}</div>
                 <div className="font-bold text-zinc-900 dark:text-zinc-100 text-base">{benefit.title}</div>
                 <div className="text-sm text-zinc-500 dark:text-zinc-400 flex-1">{benefit.description}</div>
-                <button className="mt-2 px-4 py-1.5 rounded-full bg-indigo-600 text-white cursor-pointer text-sm font-semibold hover:bg-indigo-700 transition">
+                <button
+                  onClick={() => {
+                    if (benefit.cta === "View") {
+                      toast.success("Successfully viewed!", {
+                        style: { background: "#6366f1", color: "#fff" }, // indigo
+                      });
+                    } else {
+                      toast.success("Benefit claimed!", {
+                        style: { background: "#a21caf", color: "#fff" }, // purple
+                      });
+                    }
+                  }}
+                  className="mt-2 px-4 py-1.5 rounded-full bg-indigo-600 text-white cursor-pointer text-sm font-semibold hover:bg-indigo-700 transition"
+                >
                   {benefit.cta}
                 </button>
               </motion.div>
