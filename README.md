@@ -80,3 +80,13 @@ This Next.js application is ready for deployment on [Vercel](https://vercel.com/
 2.  Sign up for a Vercel account and import the repository.
 3.  Vercel will automatically detect the Next.js project and configure the build settings.
 4.  Click "Deploy" and your dashboard will be live!
+
+### 📱 Screenshots
+## Dark Theme
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/9cf437d8-3e57-4120-ab5b-006f03ee5753" />
+<img width="1470" alt="image" src="https://github.com/user-attachments/assets/b01b6e03-8c91-4a6f-893e-b3045473db6b" />
+
+## Light Theme
+<img width="1469" alt="image" src="https://github.com/user-attachments/assets/758dd359-2e20-4db3-8664-48a7bfb7b772" />
+
+
