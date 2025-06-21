@@ -141,7 +141,7 @@
 /* The animated grid itself */
 body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0;
   /* A faint grid pattern for light mode */
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);

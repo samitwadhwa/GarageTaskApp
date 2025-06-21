@@ -20,7 +20,7 @@ export default function RootLayout({
         <body className="antialiased bg-zinc-50 dark:bg-zinc-950">
           <CursorLightEffect />
           <Header />
-          <main className="p-4 min-h-screen">{children}</main>
+          <main className="p-4">{children}</main>
         </body>
       </ThemeProvider>
     </html>

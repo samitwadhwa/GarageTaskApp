@@ -45,7 +45,7 @@ export function BenefitsSection() {
                 <div>{iconMap[benefit.icon as keyof typeof iconMap]}</div>
                 <div className="font-bold text-zinc-900 dark:text-zinc-100 text-base">{benefit.title}</div>
                 <div className="text-sm text-zinc-500 dark:text-zinc-400 flex-1">{benefit.description}</div>
-                <button className="mt-2 px-4 py-1.5 rounded-full bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 transition">
+                <button className="mt-2 px-4 py-1.5 rounded-full bg-indigo-600 text-white cursor-pointer text-sm font-semibold hover:bg-indigo-700 transition">
                   {benefit.cta}
                 </button>
               </motion.div>

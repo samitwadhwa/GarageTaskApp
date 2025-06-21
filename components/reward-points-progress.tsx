@@ -30,7 +30,7 @@ export function RewardPointsProgress() {
 
   if (pointsLoading || !points) {
     return (
-      <div className="flex flex-col items-center justify-center mb-8">
+      <div className="w-full bg-white dark:bg-zinc-900 rounded-2xl shadow p-5 flex flex-col items-center justify-center">
         <h2 className="text-lg font-semibold mb-4 text-zinc-900 dark:text-zinc-100">Reward Points</h2>
         <div className="relative w-[120px] h-[120px]">
           <Skeleton className="w-full h-full rounded-full" />
@@ -39,11 +39,10 @@ export function RewardPointsProgress() {
     );
   }
 
-
   return (
-    <div className="flex flex-col items-center justify-center mb-8">
-      <h2 className="text-lg font-semibold mb-4 text-zinc-900 dark:text-zinc-100">Reward Points</h2>
-      <div className="relative w-[120px] h-[120px]">
+    <div className="w-full  p-5 flex flex-col items-center justify-center">
+      <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Reward Points</h2>
+      <div className="relative w-[120px] h-[120px] mt-4">
         <svg width={size} height={size} className="rotate-[-90deg]">
           <circle
             cx={size / 2}
