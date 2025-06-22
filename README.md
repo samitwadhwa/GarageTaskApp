@@ -74,12 +74,12 @@ npx jest --watch
 
 ## ☁️ Deployment
 
-This Next.js application is ready for deployment on [Vercel](https://vercel.com/), the platform from the creators of Next.js.
+This Next.js application is ready for deployment on https://dashboard-task-app-nine.vercel.app (VERCEL), the platform from the creators of Next.js.
 
 1.  Push your code to a GitHub repository.
 2.  Sign up for a Vercel account and import the repository.
 3.  Vercel will automatically detect the Next.js project and configure the build settings.
-4.  Click "Deploy" and your dashboard will be live!
+4.  Click "Deploy" and your dashboard will be live! 
 
 ### 📱 Screenshots
 ## Dark Theme
